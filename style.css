@@ -1,0 +1,96 @@
+@font-face
+{
+    font-family: Futura;
+    src: url(font/futur.ttf);
+}
+
+body {
+    font-family: Futura;
+    align-items: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding: 2em 0;
+    margin: 0 1em;
+    border-bottom: 3px solid black;
+    top: 0;
+    background-color: white
+}
+
+.information_header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.information_header a {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.information_header a:hover {
+    color: #FEF200;
+}
+
+#about {
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+#about img {
+    margin: 10px 
+}
+
+#about div {
+    margin: 10px;
+    width: 60%;
+}
+
+.swag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.type_skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    margin: 10px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.progress {
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.dot {
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.empty_dot {
+    margin: 0 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: grey;
+}

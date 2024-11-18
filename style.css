@@ -6,7 +6,6 @@
 
 body {
     font-family: Futura;
-    background-color: white;
     margin: 0;
     padding: 0;
 }
@@ -24,6 +23,20 @@ header {
     background-color: white
 }
 
+button {
+    font-size: 100%;
+    width: 30% ;
+    height: 40px;
+    border: none;
+    background: linear-gradient(to left, grey 34%, yellow 65%) right;
+    background-size: 300% 100%;
+}
+
+button:hover {
+    background-position: left;
+    transition: all 400ms ease;
+}
+
 .information_header {
     display: flex;
     flex-wrap: wrap;
@@ -33,16 +46,21 @@ header {
     color: black;
     text-decoration: none;
     margin: 5px;
+    padding: 5px;
+    background: linear-gradient(to left, white 34%, yellow 65%) right;
+    background-size: 300% 100%;
 }
 
 .information_header a:hover {
-    color: #FEF200;
+    background-position: left;
+    transition: all 400ms ease;
 }
 
 #about {
     display: flex;
     justify-content: space-around;
     vertical-align: middle;
+    object-fit: fill;
 }
 
 #about img {
@@ -66,6 +84,7 @@ header {
     align-items: center;
     padding: 2em;
     border-radius: 15px ;
+    justify-content: space-evenly;
 }
 
 .type_skill:hover{
@@ -88,26 +107,29 @@ header {
     flex-wrap: wrap;
 }
 
-.dot {
-    margin: 0 3px;
-    width: 10px;
+.progress-container {
+    position: relative;
+    width: 150px;
+    margin: 0;
+    background: #CDCDCD;
     height: 10px;
-    background-color: red;
-    border-radius: 100%;
-}
-
-.empty_dot {
-    margin: 0 3px;
-    width: 10px;
+  }
+  
+  .progressbar {
+    position: absolute;
     height: 10px;
-    border-radius: 100%;
-    background-color: grey;
-}
+    max-width: 100%;
+    background: yellow
+  }
 
 .travaux {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.experience {
+    object-fit: contain;
 }
 
 .intersection {
@@ -116,3 +138,5 @@ header {
     background-color: black;
     margin: 50px  auto;
 }
+
+.contact {}
